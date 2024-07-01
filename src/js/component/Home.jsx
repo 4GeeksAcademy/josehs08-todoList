@@ -12,7 +12,7 @@ const Home = () => {
 	}
 
 	function handleKeyPress(e) {
-		if (e.key === 'Enter' && !taskList.includes(task)) {
+		if (e.key === 'Enter' && !taskList.includes(task) && task.trim() !== "") {
 			addTask();
 			setTask("");
 		}
